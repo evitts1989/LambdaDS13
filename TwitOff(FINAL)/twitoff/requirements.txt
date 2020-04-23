@@ -1,8 +1,0 @@
-flask
-flask-sqlalchemy
-tweepy 
-basilica 
-python-dotenv 
-scikit-learn 
-gunicorn 
-psycopg2
