@@ -1,0 +1,23 @@
+
+{% set active_page = "books" %}
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1> My Tweets Page </h1>
+
+    <p>{{ message }} </p>
+
+    {% if tweets %}
+        <ul>
+        {% for tweet in tweets %}
+            <li>{{ tweet.text }}</li>
+        {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>Tweet not found.</p>
+    {% endif %}
+
+{% endblock %}
