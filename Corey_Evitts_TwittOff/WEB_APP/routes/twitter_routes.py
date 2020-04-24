@@ -55,7 +55,7 @@ def store_twitter_user_data(screen_name):
 @twitter_routes.route("/users")
 @twitter_routes.route("/users.json")
 def list_users():
-    # assigns the result of querying the user table from the sqlite database that is assigned in the __init__ file "kyle_twitter_db.db" to
+    # assigns the result of querying the user table from the sqlite database that is assigned in the __init__ file "corey_twitter_db.db" to
     # the variable db_users
     db_users = User.query.all()
 
